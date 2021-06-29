@@ -124,12 +124,14 @@ start.changes <- function(season_end_year,team_name){
 
 Now, we can generate **UpSet plot** of any ISL team from any season by keying in the `season_end_year` and the `team_name`.
 
-Like this... `start.changes(season_end_year = 2021,team_name = "Mohun")`
+Like this... 
 
-... which gives us this:
+`start.changes(season_end_year = 2021,team_name = "Mohun")`
+
+... which gives us this plot (everything else happens under the hood):
 
 
-![MB](https://user-images.githubusercontent.com/37649445/123698686-108aac80-d87c-11eb-9781-ead8cd33cd9c.png)
+![KB](https://user-images.githubusercontent.com/37649445/123748746-3d69ae80-d8d2-11eb-811b-d41ceda1549d.png)
 
 
 Fin.
