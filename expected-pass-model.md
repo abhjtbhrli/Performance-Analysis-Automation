@@ -21,6 +21,13 @@ This entire scheme can be added to every pass that happens on a football pitch a
 
 Football is highly variable, hence true passing rates tend to converge only after a considerable sample. For example, a player might misplace all 5 of his first 5 passes in a match. That doesn't mean he is the worst passer ever (_0% completion rate_). He will eventually get his passes correct (passing, afterall, is the very foundation of football and no player will misplace all his passes) and his rate is bound to go up. Therefore, small samples don't offer a clear picture of analyses like this. We use bigger samples (which is easier because one football match can generate in the range of 500-1000 passes) to perform passing value analysis.
 
+**____________________**
+
+Carrying out machine learning tasks in the context of performance analysis is often a labour of love for the analyst. Automating tasks in performance analysis is still at a nascent stage, which is understandable since performance analysts don't usually have coding background and programming is an acquired skill rather than a prerequisite skill.
+
+**____________________**
+
+We use the `tidyverse` and `tidymodels` packages to do almost all our tasks for this project. The `tidyverse` package is a nice all-encompassing package that contains functions and libraries for data cleaning, data wrangling and data visualisation. The `tidymodels` package is a one-stop shop for all our machine learning needs. `tidymodels` is said to have a steep learning curve, but it is super intuitive and helps in easily building our *_Expected Passing_* model.
 
 
 
