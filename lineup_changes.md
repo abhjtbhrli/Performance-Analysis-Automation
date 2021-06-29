@@ -95,7 +95,7 @@ start.changes <- function(season_end_year,team_name){
     scale_x_continuous(breaks = seq(1,max(changes.df$match),1),position = "bottom")+
     scale_y_continuous(breaks = seq(1,max(changes.df$changes),1))+
     geom_segment(data = changes.df,
-                 aes(x = match,y = 0,xend = match,yend = changes,colour = -changes),
+                 aes(x = match,y = 0,xend = match,yend = changes,colour = changes),
                  size = 1,
                  alpha = 0.7,
                  show.legend = F)+
@@ -109,6 +109,7 @@ start.changes <- function(season_end_year,team_name){
          subtitle = paste0(team_name_lineup$vs.team[str_detect(team_name_lineup$vs.team,team_name)][1]," \nISL ",season_end_year-1,"-",season_end_year))+
     xlab("Match no.")+
     ylab("No. of changes")+
+    scale_color_gradient(low = "blue",high = "red")+
     theme(
       text = element_text(family = "Courier"),
       plot.background = element_rect(fill="#F6FCF8"),
@@ -135,3 +136,5 @@ Like this...
 
 
 Fin.
+
+_**NOTE**:_ _Functions will run for ISL seasons starting from 2017-18. Pre-2017 ISL seasons have different formatting in the transfermarkt.com data and we need to write different functions to extract and visualise data from those seasons._
