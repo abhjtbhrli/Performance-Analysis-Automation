@@ -126,7 +126,7 @@ Now, we can generate **UpSet plot** of any ISL team from any season by keying in
 
 Like this... 
 
-`start.changes(season_end_year = 2021,team_name = "Mohun")`
+`start.changes(season_end_year = 2020,team_name = "Kerala")`
 
 ... which gives us this plot (everything else happens under the hood):
 
