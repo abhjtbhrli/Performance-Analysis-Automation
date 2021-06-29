@@ -7,7 +7,7 @@ This article is the first of a series with supporting codes that will act as a s
 
 The tasks in this part are made extremely easy by functions. We write two functions which will handle all aspects of connecting, loading, transforming and visualising.
 
-Jason Zivkovic's `worldfootballR` package is of great help here in that it allows us to pull data from _transfermarkt.com_ with a few helper functions. Even though ISL data isn't as extensive and clean as big leagues' data on _transfermarkt.com_, matchsheet data is fairly consistent and since it's available to scrap and laod via `worldfootballR`, there's no point looking for other data sources.
+Jason Zivkovic's `worldfootballR` package is of great help here in that it allows us to pull data from _fbref.com_ with a few helper functions. Even though ISL data isn't as extensive and clean as big leagues' data on _fbref.com_, matchsheet data is fairly consistent; and since it's available to scrap and laod via `worldfootballR`, there's no point looking for other data sources.
 
 To use the `worldfootballR` package, first install it ([instructions are here](https://github.com/JaseZiv/worldfootballR)) and then load the library with `library(worldfootballR)` command.
 
@@ -137,4 +137,4 @@ Like this...
 
 Fin.
 
-_**NOTE**:_ _Functions will run for ISL seasons starting from 2017-18. Pre-2017 ISL seasons have different formatting in the transfermarkt.com data and we need to write different functions to extract and visualise data from those seasons._
+_**NOTE**:_ _Functions will run for ISL seasons starting from 2017-18. Pre-2017 ISL seasons have different formatting in the fbref.com data and we need to write different functions to extract and visualise data from those seasons._
