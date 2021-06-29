@@ -29,6 +29,19 @@ Carrying out machine learning tasks in the context of performance analysis is of
 
 We use the `tidyverse` and `tidymodels` packages to do almost all our tasks for this project. The `tidyverse` package is a nice all-encompassing package that contains functions and libraries for data cleaning, data wrangling and data visualisation. The `tidymodels` package is a one-stop shop for all our machine learning needs. `tidymodels` is said to have a steep learning curve, but it is super intuitive and helps in easily building our *_Expected Passing_* model.
 
+First, we load the libraries we need.
+
+```
+library(tidyverse) 
+library(tidymodels)
+library(ggsoccer)
+library(extrafont)
+library(tidyr)
+library(readr)
+library(magrittr)
+```
+Next step is importing the datasets. There are two datasets in my locale, _Indian Super League Master.csv_ and _I-League Master.csv_. The first one contains event data from 575 ISL matches since the league's inception in 2014. The second dataset contains event data from the last two I-League seasons.
+
 
 
 
